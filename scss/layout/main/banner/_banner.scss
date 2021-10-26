@@ -1,0 +1,23 @@
+.banner {
+  margin: 4rem 0;
+
+  &__container {
+    // overflow-x: hidden;
+    position: relative;
+    margin: auto;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}

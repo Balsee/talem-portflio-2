@@ -1,0 +1,19 @@
+{
+  "name": "talem-portflio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass src/scss/main.scss src/css/main.css",
+    "server": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0"
+  }
+}

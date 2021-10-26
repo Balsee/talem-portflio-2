@@ -1,0 +1,70 @@
+.info-grid {
+  padding: 4rem 0;
+
+  &__container {
+    @include flex(column, center, center);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  &__row {
+    width: 100%;
+    height: 376px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    &.sb {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      &:nth-child(even) {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    &__element {
+      border-radius: $radius-big;
+      padding: 2rem;
+      background: $secondary-background-color;
+      border: 1px solid hsla(0,0%,62%,.2);
+
+
+      &__title {
+        @include flex(column, center, flex-start);
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: $font-default;
+
+        span {
+          font-size: 2rem;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        &#optymalizacja {
+          span {
+            background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 50%, #ECA1FE 100%);
+          }
+        }
+
+        &#technologie {
+          span {
+            background-image: linear-gradient(-225deg, #37ecba 0%, #72afd3 100%);
+          }
+        }
+
+        &#design {
+          span {
+            background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+          }
+        }
+
+        &#pozycjonowanie {
+          span {
+            background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+          }
+        }
+      }
+    }
+  }
+}

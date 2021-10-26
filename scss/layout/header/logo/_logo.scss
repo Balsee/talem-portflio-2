@@ -1,0 +1,10 @@
+.header__logo {
+  height: 100%;
+  @include flex(row, center, center);
+
+  &__image {
+    height: 64px;
+    width: 64px;
+    fill: $accent-default;
+  }
+}

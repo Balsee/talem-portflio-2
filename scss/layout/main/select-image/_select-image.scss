@@ -1,0 +1,88 @@
+.select-image {
+  background: $secondary-background-color;
+  padding: 4rem 0;
+  // overflow: hidden;
+
+  &__container {
+    @include flex(column, flex-start, center);
+    row-gap: 2rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  &__menu {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    // padding: 2rem 0;
+    background: $main-background-color;
+    border-radius: 2rem;
+    position: relative;
+    border: 1px solid hsla(0,0%,62%,.2);
+
+    &__item {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      @include flex(row, center, center);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__marker {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: transform 0.3s ease;
+      border: 5px solid hsla(0,0%,62%,.2);
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 0 2rem hsla(0,0%,62%,.5);
+    }
+  }
+
+  &__content {
+    @include flex(row, center, center);
+    width: 100%;
+    position: relative;
+
+    &__item {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      visibility: hidden;
+
+      &.active {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &__image {
+        display: block;
+        width: 100%;
+        border-radius: $radius-big;
+        border: 1px solid hsla(0,0%,62%,.2);
+      }
+    }
+  }
+}

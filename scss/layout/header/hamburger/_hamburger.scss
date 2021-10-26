@@ -1,0 +1,7 @@
+.header__hamburger {
+  cursor: pointer;
+
+  @include screen($tablet) {
+    display: none;
+  }
+}

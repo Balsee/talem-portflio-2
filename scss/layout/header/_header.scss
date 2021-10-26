@@ -1,0 +1,26 @@
+@import './logo/logo';
+@import './hamburger/hamburger';
+@import './navigation/navigation';
+@import './button/button';
+
+.header {
+  z-index: 1000;
+  background: transparentize($main-background-color, 0.25);
+  backdrop-filter: saturate(180%) blur(20px);
+
+  border-bottom: 1px solid $secondary-background-color;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 64px;
+
+  &__container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    @include flex(row, space-between, center);
+  }
+}

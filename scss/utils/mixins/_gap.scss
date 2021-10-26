@@ -1,0 +1,16 @@
+@mixin gap($type: gap, $amount: null, $direction: null) {
+
+  @if $amount != null {
+    @if $type == gap {
+      gap: $amount;
+    }
+
+    @if $type == margin {
+      @if $direction == null {
+        margin: $amount;
+      } @else {
+        margin-#{$direction}: $amount;
+      }
+    }
+  }
+}
