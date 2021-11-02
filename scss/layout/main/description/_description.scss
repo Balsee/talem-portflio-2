@@ -1,0 +1,31 @@
+.description {
+  padding: 4rem 0;
+
+  &__container {
+
+  }
+
+  &__sections {
+    @include flex(row, center, center);
+
+    flex-wrap: wrap;
+    // row-gap: 2rem;
+    border: 1px solid rgba(158, 158, 158, 0.2);
+    background: #f1f1f4;
+    border-radius: $radius-big;
+    // padding: 2rem;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  &__section {
+    // height: calc(100vh - 4rem);
+    height: 100%;
+    width: 100%;
+    background: red;
+
+    &:nth-child(odd) {
+      background: blue;
+    }
+  }
+}

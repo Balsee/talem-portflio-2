@@ -1,5 +1,9 @@
 .banner {
-  margin: 4rem 0;
+  margin: 2rem 0;
+
+  @include screen($tablet) {
+      margin: 4rem 0;
+    }
 
   &__container {
     // overflow-x: hidden;
@@ -14,10 +18,14 @@
     animation: gradient 15s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
     top: 0;
     left: 0;
     margin: 0;
+
+    @include screen($tablet) {
+      font-size: 4rem
+    }
   }
 }

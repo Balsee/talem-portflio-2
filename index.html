@@ -106,27 +106,113 @@
       <section class="info-grid">
         <div class="info-grid__container wrapper">
           <div class="info-grid__row sb">
-            <div class="info-grid__row__element">
-              <h3 id="optymalizacja" class="info-grid__row__element__title">
-                nasze strony są <span>zoptymalizowane</span>
+            <div class="info-grid__row__element" id="optimization">
+              <h3 class="info-grid__row__element__title">
+                turbo <span>optymalizcja</span>
               </h3>
+              <div class="info-grid__row__element__content">
+                <svg
+                  class="info-grid__row__element__content__arc"
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M 5 100 A 50 50 0 0 1 195 100 "
+                    stroke-width="10"
+                    stroke="url(#gradient)"
+                    stroke-linecap="round"
+                  />
+
+                  <circle r="4" fill="white" cx="0" cy="0">
+                    <animateMotion path="M 5 100 A 50 50 0 0 1 195 100" />
+                  </circle>
+
+                  <defs>
+                    <linearGradient
+                      id="gradient"
+                      x1="5"
+                      y1="100"
+                      x2="195"
+                      y2="100"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#D14747" />
+                      <stop offset="0.15" stop-color="#D17547" />
+                      <stop offset="0.35" stop-color="#D89F63" />
+                      <stop offset="0.5" stop-color="#DCBA74" />
+                      <stop offset="0.65" stop-color="#E5CB97" />
+                      <stop offset="0.85" stop-color="#A3D147" />
+                      <stop offset="1" stop-color="#97DC74" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="info-grid__row__element__content__counter">
+                  7.2s
+                </div>
+              </div>
             </div>
-            <div class="info-grid__row__element">
-              <h3 id="technologie" class="info-grid__row__element__title">
-                używamy <span>najnowsze technologie</span>
+            <div class="info-grid__row__element" id="technologies">
+              <h3 class="info-grid__row__element__title">
+                tworzymy strony w oparciu o <span>najnowsze technologie</span>
               </h3>
+              <div class="info-grid__row__element__content">
+                <img
+                  class="info-grid__row__element__content__icon"
+                  src="./assets/icons/technologies/reactjs.svg"
+                  alt=""
+                />
+                <img
+                  class="info-grid__row__element__content__icon"
+                  src="./assets/icons/technologies/vuejs.svg"
+                  alt=""
+                />
+                <img
+                  class="info-grid__row__element__content__icon"
+                  src="./assets/icons/technologies/wordpress.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div class="info-grid__row sb">
-            <div class="info-grid__row__element">
-              <h3 id="design" class="info-grid__row__element__title">
+          <div class="info-grid__row f">
+            <div class="info-grid__row__element" id="design">
+              <h3 class="info-grid__row__element__title">
                 tworzymy nowoczesny <span>design</span>
               </h3>
-            </div>
-            <div class="info-grid__row__element">
-              <h3 id="pozycjonowanie" class="info-grid__row__element__title">
-                najważniejsze jest <span>pozycjonowanie</span>
-              </h3>
+
+              <div class="info-grid__row__element__content">
+                <svg
+                  class="info-grid__row__element__content__phone"
+                  width="189"
+                  height="361"
+                  viewBox="0 0 189 361"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.6779 7.10199H174.599C176.257 7.10199 177.831 7.79099 179.033 9.04299C180.308 10.373 181.012 12.161 181.011 14.08L181.012 346.025C181.012 347.945 180.309 349.734 179.033 351.064C177.833 352.314 176.259 353.003 174.601 353.003H13.6739C10.1399 353.003 7.26489 349.872 7.26489 346.024V14.082C7.26589 10.233 10.1419 7.10199 13.6779 7.10199ZM13.6769 0.10199C6.2699 0.10199 0.265893 6.36199 0.264893 14.081V346.025C0.264893 353.746 6.26789 360.004 13.6739 360.004H13.6759H174.6C182.006 360.004 188.01 353.746 188.011 346.027L188.01 14.081C188.012 6.36199 182.007 0.102989 174.599 0.102989L13.6769 0.10199Z"
+                    fill="url(#paint0_linear_109:3)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_109:3"
+                      x1="94.1379"
+                      y1="0.10199"
+                      x2="94.1379"
+                      y2="360.004"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#40BFB5" />
+                      <stop offset="0.333333" stop-color="#4095BF" />
+                      <stop offset="0.65625" stop-color="#4060BF" />
+                      <stop offset="1" stop-color="#5540BF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -150,39 +236,50 @@
           <div class="select-image__content">
             <div class="select-image__content__item active">
               <img
-                src="./assets/images/1.png"
+                src="./assets/images/select-image/mockup-1-min.png"
                 alt=""
                 class="select-image__content__item__image"
               />
             </div>
             <div class="select-image__content__item">
               <img
-                src="https://source.unsplash.com/1200x900/?nature"
+                src="./assets/images/select-image/mockup-2-min.png"
                 alt=""
                 class="select-image__content__item__image"
               />
             </div>
             <div class="select-image__content__item">
               <img
-                src="https://source.unsplash.com/1200x900/?it"
+                src="./assets/images/select-image/mockup-3-min.png"
                 alt=""
                 class="select-image__content__item__image"
               />
             </div>
             <div class="select-image__content__item">
               <img
-                src="https://source.unsplash.com/1200x900/?pc"
+                src="./assets/images/select-image/mockup-4-min.png"
                 alt=""
                 class="select-image__content__item__image"
               />
             </div>
             <div class="select-image__content__item">
               <img
-                src="https://source.unsplash.com/1200x900/?random"
+                src="./assets/images/select-image/mockup-5-min.png"
                 alt=""
                 class="select-image__content__item__image"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="description">
+        <div class="description__container wrapper">
+          <div class="description__sections">
+            <div class="description__section">1</div>
+            <div class="description__section">2</div>
+            <div class="description__section">3</div>
+            <div class="description__section">4</div>
           </div>
         </div>
       </section>
@@ -204,7 +301,7 @@
                   <span class="code-editor__editor__line"><span class="variable">value</span> <span class="keyword">=</span> <span class="variable">e</span><span class="property">.target.innerText</span>;</span>
 
                   <span class="code-editor__editor__line"><span class="keyword">for</span> (<span class="keyword">let</span> <span class="variable">contentItem</span> <span class="keyword">of</span> <span class="variable">contentItems</span>) {</span>
-                    <span class="code-editor__editor__line"><span class="variable">contentItem</span><span class="property">.classList.remove</span>(<span class="string">"active"</span>);</span>
+                    <span class="code-editor__editor__line"><span class="variable">contentItem</span><span class="property">.classListNaNpxove</span>(<span class="string">"active"</span>);</span>
                   <span class="code-editor__editor__line">}</span>
 
                   <span class="code-editor__editor__line"><span class="variable">contentItems</span>[<span class="variable">value</span> <span class="keyword">-</span> <span class="number">1</span>]<span class="property">.classList.add</span>(<span class="string">"active"</span>);</span>

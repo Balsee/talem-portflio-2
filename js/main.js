@@ -23,3 +23,5 @@ import "./handlers/main/select-image/activeItemHandler.js";
 import "./handlers/main/select-image/markerHandler.js";
 
 import "./handlers/main/code-editor/animation.js";
+
+import "./handlers/main/description/animation.js";

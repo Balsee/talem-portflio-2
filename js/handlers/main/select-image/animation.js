@@ -22,13 +22,8 @@ for (let child of container) {
         start: `top 100%`,
         end: "+=200",
         scrub: 1,
-        markers: true,
+        // markers: true,
       },
     }
   );
 }
-
-// for (let child of container) {
-//   console.log(child);
-//
-// }
