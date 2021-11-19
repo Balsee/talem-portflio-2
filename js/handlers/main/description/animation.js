@@ -15,7 +15,7 @@ gsap.fromTo(
       trigger: ".description",
       scrub: true,
       pin: true,
-      start: "top 20%",
+      start: "top top",
       end: "+=100%",
       markers: true,
       // pinSpacing: false,

@@ -565,9 +565,21 @@ summary {
 }
 
 .hero {
-  height: calc(100vh - 64px);
+  height: 100vh;
   position: relative;
   margin-bottom: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: 1rem solid #2a2a2a;
+  border-radius: 1rem;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,10 +593,26 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 0 solid #2a2a2a;
+  height: 100%;
+  border-radius: 1rem;
+  -webkit-transition: outline 0.3s linear;
+  transition: outline 0.3s linear;
+  position: relative;
+  width: 100%;
+  background-image: url(../assets/images/image-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 8rem;
 }
 
-.hero__container {
+.hero__device {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 1rem);
+}
+
+.hero__screen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,26 +620,17 @@ summary {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 0 solid #2a2a2a;
-  -webkit-transition: outline 0.3s linear;
-  transition: outline 0.3s linear;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 2rem;
   border-radius: 15px;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  position: relative;
-  width: 100%;
-}
-
-.hero__device {
-  position: absolute;
-  width: 100%;
-  top: calc(100% + 15px);
 }
 
 .hero__logo {
@@ -633,6 +652,7 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   font-size: 8rem;
+  display: none;
   -webkit-animation: pulse 5s infinite;
           animation: pulse 5s infinite;
 }
@@ -1184,7 +1204,8 @@ summary {
   border: 1px solid rgba(158, 158, 158, 0.2);
   background: #f1f1f4;
   border-radius: 16px;
-  height: 50vh;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
 
