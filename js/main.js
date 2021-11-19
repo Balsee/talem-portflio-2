@@ -13,6 +13,7 @@ import "./handlers/header/navigation/headerNavigationClassRemoval.js";
 import "./handlers/header/navigation/headerNavigationClose.js";
 
 import "./handlers/main/hero/scrollDown.js";
+import "./handlers/main/hero/animation.js";
 
 import "./handlers/main/banner/animation.js";
 
