@@ -16,11 +16,11 @@ gsap.fromTo(
       scrub: true,
       pin: true,
       start: "top top",
-      end: "+=100%",
+      end: "+=500%",
       markers: true,
       // pinSpacing: false,
     },
-    y: "-=300%",
+    y: "-300%",
     ease: "none",
   }
 );
