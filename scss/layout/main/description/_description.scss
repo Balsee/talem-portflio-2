@@ -5,16 +5,33 @@
 
   }
 
+  &__title {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+    @include screen($tablet) {
+      font-size: 4rem
+    }
+  }
+
   &__sections {
     @include flex(row, center, center);
 
     flex-wrap: wrap;
-    // row-gap: 2rem;
-    border: 1px solid rgba(158, 158, 158, 0.2);
-    background: #f1f1f4;
+    row-gap: 2rem;
     border-radius: $radius-big;
     // padding: 2rem;
-    height: 50vh;
+    height: 75vh;
+    width: 100%;
     overflow: hidden;
   }
 
@@ -22,10 +39,72 @@
     // height: calc(100vh - 4rem);
     height: 100%;
     width: 100%;
-    background: red;
+    border-radius: $radius-big;
+    padding: 2rem;
+    border: 1px solid rgba(158, 158, 158, 0.2);
+    background: #f1f1f4;
+    @include flex(row, flex-start, flex-start);
+    overflow: hidden;
+
+    &:last-child {
+      .description__section__text {
+        transform: translateY(-4rem);
+      }
+    }
+
+    &.center {
+      justify-content: center;
+      align-items: center;
+      padding: 4rem;
+
+      .description__section__text {
+        text-align: center;
+
+        &__title {
+          margin-bottom: 1rem;
+        }
+      }
+    }
 
     &:nth-child(odd) {
-      background: blue;
+      justify-content: flex-end;
+
+      .description__section__text {
+        text-align: right;
+      }
+
+      .description__section__image {
+        right: 0;
+        left: unset;
+      }
+    }
+
+    &__text {
+      width: 100%;
+
+      &__title {
+        margin: 0;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+
+      &__subtitle {
+        font-size: 1rem;
+        line-height: 1.45;
+        font-weight: 500;
+      }
+
+      &__description {
+        font-size: 1rem;
+        line-height: 1.45;
+      }
+    }
+
+    &__image {
+      position: absolute;
+      left: 0%;
+      top: 15%;
     }
   }
 }

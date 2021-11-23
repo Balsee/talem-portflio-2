@@ -15,12 +15,12 @@ gsap.fromTo(
       trigger: ".description",
       scrub: true,
       pin: true,
-      start: "top 20%",
-      end: "+=100%",
+      start: "top top",
+      end: "+=500%",
       markers: true,
       // pinSpacing: false,
     },
-    y: "-=300%",
+    y: "-300%",
     ease: "none",
   }
 );
